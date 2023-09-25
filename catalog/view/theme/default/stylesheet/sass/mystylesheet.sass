@@ -1,0 +1,1343 @@
+$b: #000
+$w: #fff
+$thm: #825009
+$thm2: #DDCDC0
+$faq: #DDCDBF
+$font: #A07B51
+$title: 'EB Garamond', serif
+
+*
+	font-family: 'Montserrat', sans-serif
+	outline: none !important
+
+input
+	&::-ms-clear,
+	&::-ms-reveal,
+	&::-ms-expand
+		display: none !important
+
+button, input
+	outline: none !important
+	&:focus
+		outline: none !important
+
+a:not(.sticker)
+	&:hover
+		color: $thm !important
+
+.sticker
+	text-align: center
+
+#quickcheckout-back
+	background: $thm !important
+	border-color: $thm
+	min-width: 12em
+
+#button-cart, #button-confirm, .checkout-cart .buttons a
+	&:hover
+		color: $thm !important
+		background: $w !important
+		background-color: $w !important
+
+#quickcheckout-back  
+	background: $w
+
+#quickcheckout-back
+	&:hover, &:focus
+		color: $thm !important
+		background: $w !important
+		border-color: $thm !important
+
+.cart-dorpdown-footer a
+	&:hover
+		color: $thm !important
+		background: $w !important
+
+.checkout-success .line-4 a
+	&:hover 
+		color: $thm !important
+
+.btn-primary, #quickcheckout-back, .account-password .btn-default
+	background: $thm
+	border-color: $thm
+	min-width: 200px
+	// font-weight: bold
+	padding: 17px 12px
+	font-size: 12px
+	color: $w !important
+	text-transform: capitalize !important
+	letter-spacing: 1px
+	// border-radius: 25px !important
+	&:hover, &:active, &:focus
+		background: $thm2 !important
+		color: $b !important
+		border-color: $thm2
+
+.btn-default:not(.btn-number, #button-search)
+	background: $thm
+	border-color: $thm
+	min-width: 200px
+	// font-weight: bold
+	padding: 17px 12px
+	font-size: 12px
+	color: $w !important
+	text-transform: capitalize !important
+	letter-spacing: 1px
+	// border-radius: 25px !important
+	&:hover, &:active, &:focus
+		background: $thm2 !important
+		color: $b !important
+		border-color: $thm2
+
+#button-coupon, #button-login
+	padding: .5em !important
+	min-width: 5em !important
+
+.btn-number
+	background: #B4B4B4 !important
+	color: $w
+	&:hover
+		background: #707070 !important
+		color: $w !important
+
+.btn-mi
+	min-width: 4em !important
+	padding: 4px 6px 0
+
+.glyphicon-minus
+	&:before
+		content: '-'
+		display: inline-block
+
+.glyphicon-plus
+	&:before
+		content: '+'
+		display: inline-block
+
+.account-container
+	a
+		&:hover
+			border-color: $thm !important
+			h3, span:before, p
+				color: $thm !important
+
+.cart-dorpdown-item-charges
+	max-width: 50%
+
+.cart-dorpdown-footer
+	a
+		background: $thm
+		color: $w !important
+		border-color: $thm
+		&:hover
+			color: $thm !important
+			border-color: $thm
+			background: $w
+
+.breadcrumb
+	background: none
+	border: none
+	width: 90%
+	margin: 0 auto
+	li
+		a
+			font-size: 12px !important
+			letter-spacing: 0 !important
+			font-weight: 500 !important
+			text-transform: uppercase			
+		&:first-of-type
+			padding-left: 0
+
+.alert
+	.alert-danger, .alert-success
+		margin-top: 3%
+
+#content
+	margin-bottom: 2em
+	line-height: 2em
+
+#mobileNav
+	i
+		color: $thm
+
+#sidr
+	.cd-accordion-menu
+		li
+			label
+				display: none
+			label ~ ul
+				display: none !important
+		a
+			color: $w !important
+			&:hover
+				color: $w !important
+				font-weight: bold
+
+	a
+		color: $w !important
+		&:hover
+			color: $w !important
+			font-weight: bold
+
+.account-forgotten
+	form
+		fieldset
+			padding-top: 3%
+
+.account-order
+	.modal-dialog
+		.modal-body
+			ul
+				margin: auto
+				width: auto
+				li
+					a
+						background: $thm
+						color: $w
+						border: 1px solid $thm
+						transition: .3s ease
+						.badge
+							color: $thm
+				&:hover
+					a
+						background: $w
+						color: $thm
+			#reorder_order
+				width: auto
+				margin: auto
+				background: $thm
+				color: $w
+				border: 1px solid $thm
+				transition: .3s ease
+				&:hover
+					background: $w
+					color: $thm
+
+.information-contact-success
+	#content
+		text-align: center
+		.buttons
+			margin-top: 4em !important
+
+.pagination-container
+	text-align: center
+.pagination
+	li
+		a, span
+			border: none
+			color: $b
+			font-weight: bold
+			width: 1.75em
+			height: 1.75em
+			display: flex
+			align-items: center
+			justify-content: center	
+			border-radius: 50%
+			margin: 0 .5em
+			font-size: 17px
+		a
+			background: transparent
+		&.active, &:hover
+			span, a
+				color: $thm
+				border-color: $thm !important
+				background: transparent !important
+
+		&.arrow
+			// font-family: $title
+			&:hover
+				background: transparent
+				a
+					border: none
+
+		// &:last-of-type
+		// 	a
+		// 		width: auto
+		// 		margin: 0
+
+.information-contact
+	.contact-footer
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+		#google_recaptcha
+			margin-bottom: 0 !important
+
+		@media (max-width: 768px)
+			flex-wrap: wrap
+			justify-content: center
+
+	#content
+		.row
+			margin: 0
+
+			.form-group
+				margin-bottom: 15px
+
+				input
+					height: 40px
+
+				input, textarea
+					&::placeholder
+						font-style: italic
+						font-size: 12px
+
+		.contact-description
+			margin: 35px 0
+
+.color-options
+	// text-align: left
+	padding: 0 30px
+	span
+		cursor: pointer
+		display: inline-block
+		width: 20px
+		height: 20px
+		border-radius: 10px
+		border: 1px solid #ddd
+		margin: 0 5px
+		&:after
+			content: ''
+			display: inline-block
+			width: 25px
+			height: 25px
+			border: 1px solid transparent
+			border-radius: 50%
+			transform: translate(-3.5px, -3.5px)
+
+		&.active
+			&:after
+				border-color: darkgrey
+
+.information-contact
+	@media (min-width: 1200px)
+		.container
+			width: 950px
+
+.iid-4
+	#content
+		> h2
+			display: none
+
+	.breadcrumb + .container
+		width: 100%
+		padding: 0
+
+		.row
+			margin: 0
+
+			#content
+				padding: 0
+
+	.about-container
+		.inner
+			display: flex
+			overflow: hidden
+			&:not(:first-of-type)
+				margin-top: calc(50px + (100 - 50) * (100vw - 320px) / (1920 - 320))
+			.image-container
+				// width: 49%
+				img
+					width: 100%
+
+			.text-container
+
+				h2
+					text-align: left
+					margin: calc(25px + (50 - 25) * (100vw - 320px) / (1920 - 320)) 0
+
+			&.even
+				justify-content: flex-end
+				.text-container
+					margin-left: 0
+					margin-right: 3%
+
+			@media (min-width: 1024px)
+				max-height: calc(310px + (510 - 310) * (100vw - 1024px) / (1920 - 1024))
+				.image-container
+					width: 49%
+
+				.text-container
+					width: 43%
+					margin-left: 3%
+
+					.p
+						height: 60%
+						overflow: auto
+
+				&.even
+					.image-container
+						order: 2
+
+					.text-container
+						order: 1
+
+		@media (max-width: 1024px)
+			width: 90%
+			margin: 0 auto
+			.inner
+				flex-wrap: wrap
+
+h2
+	font-family: $title
+	color: $font
+
+.information-faq
+	.breadcrumb + .container
+		margin-top: calc(20px + (40 - 20) * (100vw - 320px) / (1920 - 320))
+		@media (min-width: 1200px)
+			width: 1100px
+
+	h2
+		margin-bottom: calc(25px + (30 - 25) * (100vw - 320px) / (1920 - 320)) !important
+
+	.panel-group
+		background: $faq
+		padding: 25px
+
+		h3
+			color: $font
+			font-size: calc(18px + (20 - 18) * (100vw - 320px) / (1920 - 320))
+			font-family: $title
+
+		.inner
+
+			.panel, .panel-body, .panel-heading
+				background: transparent
+				box-shadow: none
+
+			.panel, .panel-body
+				border: none !important
+
+			.panel-body
+				padding-left: 0
+
+			.panel-heading
+				border-bottom: 1px solid $w
+				padding-bottom: 5px
+				display: flex
+				align-items: center
+				position: relative
+
+				h4
+					z-index: 1
+					width: 100%
+					a
+						padding-left: 0
+
+				p, a, h4
+					font-size: 14px
+
+				span
+					position: absolute
+					z-index: 0
+					right: 5px
+
+	@media (min-width: 991px)
+		.panel-group
+			display: flex
+			h3
+				width: 20%
+
+			.inner
+				width: 80%
+
+	@media (max-width: 991px)
+		.panel-group
+
+.product-category, .product-special
+	.container
+		@media (min-width: 1200px)
+			width: 90%
+
+	@media (max-width: 768px)
+		header
+			.img-2
+				width: 50px !important
+				width: 50px
+
+	aside
+		@media (min-width: 768px)
+			width: 20% !important
+
+		#filter-groups
+			.item-header
+				font-family: $title
+				color: $font !important
+				font-size: 22px
+
+			#side-categories
+				*
+					color: $b
+
+				.sub
+					&.level-2
+						padding-left: 20px
+
+				.item
+					&.active
+						a
+							color: $font
+
+						.plus
+							color: transparent
+							.minus
+								opacity: 1 !important
+								color: #A3A3A3
+
+					.toggle
+						.plus
+							position: relative
+							.minus
+								opacity: 0
+								position: absolute
+								left: 0
+								right: 0
+
+			#side-manufacturer
+				label
+					margin-left: 8px
+					margin-bottom: 25px
+
+			#side-price
+				.ui-slider-handle, .ui-slider-handle, .ui-slider-range
+					background: $thm !important
+
+				.ui-slider-handle
+					width: 17px
+					height: 17px
+
+	#content
+		@media (min-width: 768px)
+			width: 80% !important
+
+.sorts
+	select
+		font-weight: 400
+		font-size: 14px !important
+	@media (min-width: 768px)
+		.flex-wrap
+			justify-content: flex-end
+
+			.col-md-6
+				width: 155px
+
+				select
+					border-color: $thm
+					color: $thm
+.custom-select
+	margin: 0px
+	height: 52px
+	width: 100%
+	border-width: 1px
+	border-style: solid
+	border-color: #dadada
+	box-shadow: none
+	font-size: 16px !important
+	color: #000
+	-webkit-appearance: none
+	-webkit-border-radius: 0px
+	-moz-appearance: none
+	appearance: none
+	background: url(../../../../../../image/catalog/dropdown.png) no-repeat 83% 50% #fff
+	background-size: 11px 6px
+	border-radius: 0px !important
+	padding: 12px 20px !important
+	height: auto !important
+	// padding-right: 40px !important
+
+.featured
+	.product-button
+		padding-top: 10px
+
+	.slick-slider
+		width: 95%
+		margin: 0 auto
+
+		.slick-list
+			width: 98%
+			margin: 0 auto
+
+		.slick-nav
+			position: absolute
+			top: 0
+			bottom: 0
+			display: flex
+			align-items: center
+			width: 30px
+			color: $b
+			font-size: 30px
+			&.left
+				left: -35px
+
+			&.right
+				right: -35px
+
+			&:hover
+				color: $thm2
+
+.product-gutter
+	.product-block
+		position: relative
+		.product-image-block
+			height: 400px
+			img
+				max-height: 400px
+
+			a.product-image
+				height: 100%
+				display: flex
+				align-items: center
+
+			.hovered-image
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				right: 0
+				left: 0
+
+		.product-button
+			button
+				border-radius: 50% !important
+				height: 30px
+				width: 30px
+				display: flex
+				align-items: center
+				margin: 0 10px
+				border: transparent
+				i
+					position: absolute
+					left: 50%
+					top: 50%
+					transform: translate(-50%, -50%)
+
+			.wishlist-btn
+				.back-face
+					position: absolute
+					opacity: 0
+					color: red
+
+				.front-face
+					&.fa-heart
+						color: red
+
+				&:hover
+					.front-face
+						opacity: 0
+					.back-face
+						opacity: 1
+
+		.product-name
+			a
+				font-family: $title
+				color: $b
+				font-size: 18px
+
+		.categ
+			margin-top: calc(5px + (25 - 5) * (100vw - 320px) / (1920 - 320))
+			margin: auto auto 0px
+
+			h5
+				margin-bottom: 0
+				color: darkgrey
+				line-height: 2em
+				font-size: 14px
+			@media (max-width: 768px)
+				overflow: auto
+
+		.overlay
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			z-index: -1
+
+	@media (max-width: 768px)
+		.product-button
+			margin-top: 10px
+
+.btn-fancy
+	font-family: $title
+	text-decoration: underline
+	font-style: italic
+	font-size: 19px
+	letter-spacing: 1px
+	&:hover
+		background: $thm2
+		text-decoration: underline
+
+.header-logo-image
+	img
+		width: 110px
+		max-width: 110px !important
+
+header
+	box-shadow: none !important
+	@media (max-width: 768px)
+		overflow: hidden
+
+	.container
+		width: 90%
+		@media (max-width: 1200px) and (min-width: 991px)
+			width: 99%
+			margin-left: 0
+			#main-menu
+				display: flex
+
+		#main-menu
+			li
+				a
+					text-transform: uppercase
+					// font-weight: 600 !important
+					font-size: 13px
+
+		.header-top, .header-menu
+			@media (min-width: 768px)
+				padding-top: 20px
+
+			#cart
+				.cart-dropdown
+					display: flex
+					i
+						margin-right: 10px
+
+			#wishlist-total	
+				i
+					font-weight: bold
+
+			.search_container, #account, #wishlist-total, #cart
+				text-align: center
+				text-transform: uppercase
+				// font-weight: 600 !important
+				font-size: 13px
+				@media (min-width: 768px)
+					min-width: 55px
+				a, i
+					color: $b
+					&:hover
+						color: $thm
+	#main-menu
+		ul, .sub-arrow
+			display: none !important
+
+.header-logo
+	.img-1
+		background: $w
+		border-bottom-left-radius: 50%
+		border-bottom-right-radius: 50%
+		transform: translateY(40%)
+		padding: 0 10px 10px
+
+	@media (max-width: 768px)
+		.img-1
+			transform: translateY(2%)
+			max-width: 85px !important
+.common-home
+	header
+		background: transparent !important
+		.img-2
+			opacity: 1
+			transform: translateY(40%)
+			display: block !important
+
+		.img-1
+			opacity: 0
+			transform: translateY(40%)
+			position: absolute
+			left: 0
+			right: 0
+			// top: 40%
+			background: $w
+			border-radius: 50%
+			padding: 10px
+			width: 110px
+
+		&.nav_scroll
+			background: $w !important
+
+			.header-logo-image
+				position: relative
+				.img-2
+					opacity: 0 !important
+
+				.img-1
+					background: $w !important
+					opacity: 1
+
+			.header-top, #main-menu
+				a, i
+					color: $b !important
+
+		.header-top, #main-menu
+			a, i
+				color: $w !important
+
+	#content
+		margin-bottom: 0
+
+	.section-space
+		&.featured, &.fcategory, &.instagram
+			background: $w
+			position: relative
+			padding: calc(25px + (60 - 25) * (100vw - 320px) / (1920 - 320)) 0
+
+			h2
+				margin-bottom: calc(35px + (60 - 35) * (100vw - 320px) / (1920 - 320))
+
+		&.instagram
+			background: #3A4660
+
+			.item
+				&:hover
+					.overlay
+						opacity: 1
+
+				.overlay
+					position: absolute
+					top: 0
+					left: 0
+					right: 0
+					bottom: 0
+					display: flex
+					flex-direction: column
+					align-items: center
+					justify-content: center
+					color: $w
+					font-size: 22px
+					background: rgba(0,0,0,.2)
+					opacity: 0
+					transition: .3s ease
+
+			.fa-heart
+				display: none
+
+			.slick-dots
+				display: none !important
+
+			.module-instagram
+				h2
+					color: $w
+					font-size: calc(25px + (50 - 25) * (100vw - 320px) / (1920 - 320))
+					margin-bottom: 0
+
+			.instagram
+				width: 90%
+				margin: 0 auto
+
+				.slick-nav
+					position: absolute
+					top: 0
+					bottom: 0
+					display: flex
+					align-items: center
+					width: 30px
+					color: white
+					font-size: 30px
+					&.left
+						left: -35px
+
+					&.right
+						right: -35px
+
+					&:hover
+						color: $thm2
+
+			.ig-btn
+				text-align: center
+				margin-top: 20px
+				a
+					color: $w
+
+	.fcats
+		display: flex
+		flex-wrap: wrap
+
+		.fcat
+			position: relative
+			overflow: hidden
+			@media (min-width: 768px)
+				width: calc(100% / 2)
+
+			img
+				width: 100%
+				transition: 1s ease
+
+			&:hover
+				img
+					transform: scale(1.1)
+
+				div
+					&.overlay
+						background: rgba(0,0,0,.2)
+
+				.a
+					margin: 15px
+					border: 2px solid $w
+			.overlay
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				display: flex
+				align-items: center
+				justify-content: center
+				flex-direction: column
+				*
+					color: $w
+
+				.btn
+					&:hover
+						border: 1px solid $thm
+						background: rgba(255,255,255,.9)
+						text-decoration: underline
+
+				h3
+					font-size: calc(30px + (55 - 30) * (100vw - 320px) / (1920 - 320))
+					font-family: $title
+					letter-spacing: 3px
+
+	.mail-con
+		display: block !important
+		background: #D96F46
+		position: relative
+
+		.newsletter-module
+			width: 75%
+			margin: 0 auto
+			padding: 50px 0
+
+			form
+				h3
+					font-size: calc(25px + (45 - 25) * (100vw - 320px) / (1920 - 320))
+					font-family: $title
+					text-align: center
+					margin-bottom: calc(10px + (20 - 10) * (100vw - 320px) / (1920 - 320))
+					letter-spacing: 2px
+
+				p, h3
+					color: $w
+
+				p
+					padding-bottom: calc(20px + (50 - 20) * (100vw - 320px) / (1920 - 320))
+
+				.flex
+					&.input-wrap
+						@media (min-width: 991px)
+							width: 50%
+							margin: 0 auto
+
+						@media (max-width: 991px)
+							// flex-wrap: wrap
+
+						@media (max-width: 768px)
+							flex-wrap: wrap
+							.text-center
+								margin: 0 auto
+
+							input
+								height: 50px !important
+								margin-bottom: 3px
+
+						@media (min-width: 768px)
+
+							.flex-1
+								width: 70%
+
+							.btc
+								width: 30%
+
+						input
+							height: 100%
+							border-color: $thm
+							padding-left: 30px
+							font-size: 12px
+							&::placeholder
+								font-style: italic
+
+	.slideshow
+		.slideshow0
+			top: 38px
+
+		.slider-slideshow-description
+			@media (min-width: 768px)
+				top: 70%
+
+		.slider-slideshow-description-texts
+			align-items: center
+			h3
+				font-size: calc(30px + (60 - 30) * (100vw - 320px) / (1920 - 320))
+				font-family: $title
+				letter-spacing: 3px
+				margin-bottom: 20px
+
+			.btn-fancy
+				color: $w
+				padding-top: 20px
+
+		.slick-dots
+			display: flex !important
+			flex-direction: column
+			top: 0
+			justify-content: center
+			bottom: 0
+			width: 30px
+			left: 90px
+			li
+				height: 30px
+				margin: 4px 0
+				opacity: .6
+				&.slick-active
+					height: 100px
+					opacity: 1
+
+				button
+					background: $w
+					padding: 1px
+					width: 1px
+					height: 100%
+					&::before
+						display: none
+
+footer
+	background: $thm2
+	.container
+		@media (min-width: 1200px)
+			width: 85%
+
+		.footer-contact-info
+			flex: 1.5
+
+			.footer-logo-image
+				display: flex
+				justify-content: center
+				margin-bottom: 20px
+				img
+					max-width: 150px
+
+			.footer-comment
+				line-height: 2em
+
+		.footer-contact-links, .socmed
+			h5, ul, .footer-social-icons
+				margin-left: auto
+				margin-right: 0
+
+				@media (min-width: 991px)
+					width: 50%
+
+				@media (max-width: 991px) and (min-width: 768px)
+					width: 75%
+
+			ul
+				line-height: 2em
+				li
+					a
+						font-size: 12px
+
+			h5
+				font-family: $title
+				font-size: 25px
+				letter-spacing: 1px
+				margin-bottom: 25px
+
+			.footer-social-icons
+				a
+					margin-bottom: 10px
+					img
+						margin-right: 10px
+
+		@media (max-width: 768px)
+			.footer-contact-links, .socmed
+				text-align: center
+
+			.footer-social-icons
+				display: flex
+				flex-direction: column
+
+			.footer-comment
+				text-align: center
+
+	.footer-bottom
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		width: 90%
+		margin: 50px auto 0
+		padding-bottom: 10px
+		p
+			margin-bottom: 0
+			font-size: 12px
+
+		a
+			text-decoration: none
+
+		@media (max-width: 768px)
+			text-align: center
+			justify-content: center
+			.footer-bottom
+				p
+					text-align: center
+
+.product-product, .common-home
+	.product-gutter
+		.color-options
+			display: none !important
+
+.product-product
+
+	#product
+		label
+			font-family: $title
+
+		.form-group
+			margin-bottom: 10px
+
+			> label
+				font-weight: bold
+
+		.opt
+			.option-color, .rad-con
+				display: flex
+				position: relative
+				align-items: center
+
+				.radio
+					margin-top: 0
+
+					label
+						padding-left: 0
+						padding-right: 15px
+						font-weight: 500
+
+					input
+						display: none
+						+ div
+							&:after
+								border: 2px solid transparent
+
+						&:checked
+							+ div
+								&:after
+									content: ""
+									position: absolute
+									display: inline-block
+									width: 32px
+									height: 32px
+									border: 2px solid #ccc
+									border-radius: 50%
+									transform: translate(-3.5px, -3.5px)
+									left: 0
+									top: 0
+
+					.checkmark
+						height: 25px
+						width: 25px
+						border-radius: 50%
+
+			.rad-con
+				label
+					padding-right: 0 !important
+				.radio
+					width: 25px
+					text-align: center
+					margin-right: 30px
+
+		.input-group
+			max-width: 200px
+
+			.input-group-btn
+				button
+					&:hover
+						background: #EE8B62 !important
+
+	.product-image-main-container
+		img
+			height: calc(300px + (650 - 300) * (100vw - 320px) / (1920 - 320))
+			width: auto !important
+
+		@media (min-width: 1024px)
+			.slick-slide
+				text-align: right
+
+		@media (max-width: 1024px)
+			.slick-slide
+				text-align: center
+
+	.product-image-additional
+		// max-height: 90%
+		margin: auto 0
+		.slick-list
+			transform: translateY(15px)
+			margin: 10px 0
+
+			img
+				border: none !important
+
+		.slick-nav
+			font-size: 30px
+			margin-bottom: 10px
+			&.prev
+				top: 0 !important
+
+			&.next
+				.position-center-center
+					transform: translate(-50%, 15%)
+
+	.featured_related_products_
+		padding-top: calc(75px + (200 - 75) * (100vw - 320px) / (1920 - 320))
+
+	.featured-module
+		h2
+			font-size: calc(25px + (45 - 25) * (100vw - 320px) / (1920 - 320)) !important
+			color: $thm
+			margin-bottom: calc(25px + (45 - 25) * (100vw - 320px) / (1920 - 320)) !important
+
+	.container
+		@media (min-width: 1200px)
+			width: 90%
+
+	#product
+		.cart-and-share
+			display: flex
+			align-items: center
+			flex-wrap: wrap
+
+			.input-group-flex
+				margin-left: 25px
+				span
+					font-family: $title
+
+	#content
+		h2
+			margin-bottom: calc(40px + (60 - 40) * (100vw - 320px) / (1920 - 320))
+
+		#product-tabs
+			border: none !important
+			display: flex
+			flex-wrap: wrap
+			li
+				padding: 10px
+				letter-spacing: .5px
+				&:first-of-type
+					// padding-left: 0
+				a
+					border: none !important
+					font-family: $title
+					opacity: .5
+					padding: 0
+					color: $b
+
+				&.active, &:hover
+					a
+						color: $thm
+						opacity: 1
+						background: transparent
+						border-bottom: 1px solid $thm !important
+
+		.tab-content-1
+			border: 1px solid lightgrey
+			padding: 10px
+			margin: 10px 10px 10px 0
+			overflow: auto
+
+			p
+				font-size: 12px
+
+	.waiting_list_container
+		background: #DDCDBE
+
+		input
+			border: none
+			@media (max-width: 991px)
+				height: 50px
+				margin-bottom: 5px
+
+			&::placeholder
+				padding-left: 10px
+				font-style: italic
+
+
+.quantity
+	.input-group-btn
+		display: flex
+		flex-direction: row
+		.button-update
+			padding: 0 10px
+			min-width: auto !important
+
+*::selection
+	background: $thm2
+
+.opt
+	.btn-fancy
+		background: transparent !important
+		font-style: normal
+		font-size: 16px
+		position: absolute
+		right: 0
+		&:hover
+			color: $thm
+
+#sizeguide
+	.modal-dialog
+		@media (min-width: 991px)
+			min-width: 100vh
+
+		@media (max-width: 991px)
+			.tab-content
+				overflow: auto
+
+		.modal-content
+			background: $thm2
+			min-height: 70vh
+			padding: calc(15px + (30 - 15) * (100vw - 320px) / (1920 - 320))
+
+			.modal-header
+				border: none !important
+				h2
+					font-size: calc(25px + (35 - 25) * (100vw - 320px) / (1920 - 320))
+
+				.close
+					position: absolute
+					font-weight: 500
+					right: 5px
+					top: 3px
+					opacity: 1
+
+			#sguide
+				margin-bottom: 0 !important
+
+			table
+				background: $w
+				min-width: 100%
+
+				td
+					min-width: 50px
+					padding: 0 10px
+					font-weight: 500
+					font-family: $title
+					font-size: 16px
+					*
+						font-family: $title
+
+					&:hover
+						font-weight: 600
+
+			#product-tabs
+				li
+					a
+						color: $b !important
+						padding: 0 10px
+						opacity: 1
+					&.active, &:hover
+						a
+							border-bottom: 2px solid $b !important
+							color: $thm !important
+
+#register-form
+	.col-sm-12.p-0-i
+		@media (max-width: 768px)
+			text-align: center
